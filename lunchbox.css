@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    line-height: 23px;
+    font-size: 16px;
+    font-family: 'NanumBarunGothic';
+    color: #111;
+    min-width: 1350px;
+}
+
+/*font*/
+/*ㅡ>기본폰트(나눔바른고딕)*/
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+   .nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+   }
+/* ㅡ>리뷰도시락이름 폰트(가나초콜릿체)*/
+@font-face {
+    font-family: 'ghanachoco';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*header*/
+#header{
+    height: 75px;
+    background: white;
+}
+#header_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+/*header-로고*/
+#logo{
+    float: left;
+    padding-top: 5px;
+}
+
+#logo img{
+    display: block;
+}
+/*header-메뉴*/
+#header_inner ul{
+    float: left;
+    margin-left: 160px;
+}
+#header_inner ul li{
+    float: left;
+    padding: 26px 60px;
+}
+#header_inner ul li a{
+    color: #c52601;
+    font-weight: bold;
+}
+#header_inner ul li a{
+    position: relative;
+}
+
+#header_inner ul li a span{
+    height:3px;
+    width:120%;
+    background-color: orangered;
+    position: absolute;
+    bottom:-27px;
+    left:50%;
+    transform:translateX(-50%) scaleX(0);
+}
+
+#header_inner ul li a:hover span{
+    transform: translateX(-50%) scaleX(1);
+    transition: all 0.3s;}
+    #header_inner ul li a:hover{
+        color: orangered;
+        transition: all 0.3s;
+    }
+
+/*header-회원가입,로그인*/
+#header_inner ol{
+    float: right;
+}
+#header_inner ol li{
+    float: left;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+/*main_banner*/
+.mb img{
+    width: 100%;
+    display: block;
+}
+.mb .swiper-button-next{
+    color: whitesmoke;
+}
+.mb .swiper-button-prev{
+    color: whitesmoke;
+}
+/*불릿, pagination 색상 변경*/
+.mb .swiper-pagination-bullet{
+    background: whitesmoke;
+}
+
+/*contents*/
+#contents{
+    height: 680px;
+}
+#contents_inner{
+    width: 1320px;
+    margin: 0 auto;
+}
+#contents_inner #img{
+    float: left;
+    width: 635px;
+    height: 380px;
+}
+#brand_story{
+    padding: 150px 0;
+    position: relative;
+}
+#brand_story #text{
+    float: right;
+    width: 685px;
+    height: 380px;
+    background-color: #f1cfbd;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#text h1{
+    line-height: 60px;
+    font-size: 42px;
+}
+#text p{
+    padding: 20px 0 40px 0;
+}
+#text #btn a{
+    display: inline-block;
+    padding: 12px 22px;
+    background: #e05a13;
+    color: white;
+    font-weight: bold;
+    border-radius: 23px;
+}
+#text #btn a:hover{
+    transition: all 0.1s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3) inset;
+}
+#contents_inner .vegetable{
+    position: absolute;
+    top: 350px;
+    left: 1050px;
+}
+
+/*best*/
+#best{
+    height: 1760px;
+}
+#best>h2{
+    padding: 90px 0;
+    text-align: center;
+}
+/* ㅡ>1위 돈까스도시락*/
+#best1_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+#best1{
+    background: url(images/1st_bg.jpg) no-repeat center center;
+    height: 415px;
+    margin: 15px 0;
+}
+#best1 #text{
+    float: left;
+    padding-top: 90px;
+    width: 684px;
+    padding-left: 120px;
+    box-sizing: border-box;
+}
+#best1 #img{
+    float: right;
+    width: 636px;
+}
+#best1 #text h1{
+    padding: 25px 0 15px 30px;
+    color: #d46a6a;
+    background: url(images/best1_icon.png) no-repeat left top;
+}
+/* ㅡ>2위 제육볶음도시락*/
+#best2_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+#best2{
+    background: url(images/2st_bg.jpg) no-repeat center center;
+    height: 415px;
+    margin: 15px 0;
+}
+#best2 #text{
+    float: right;
+    padding-top: 90px;
+    width: 684px;
+    padding-left: 120px;
+    box-sizing: border-box;
+}
+#best2 #img{
+    float: left;
+    width: 636px;
+}
+#best2 #text h1{
+    padding: 25px 0 15px 30px;
+    color: #854f4f;
+    background: url(images/best2_icon.png) no-repeat left top;
+}
+/* ㅡ>3위 김치제육쌈밥도시락*/
+#best3_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+#best3{
+    background: url(images/3st_bg.jpg) no-repeat center center;
+    height: 415px;
+    margin: 15px 0;
+}
+#best3 #text{
+    float: left;
+    padding-top: 90px;
+    width: 684px;
+    padding-left: 120px;
+    box-sizing: border-box;
+}
+#best3 #img{
+    float: right;
+    width: 636px;
+}
+#best3 #text h1{
+    padding: 25px 0 15px 30px;
+    color: #8e571b;
+    background: url(images/best3_icon.png) no-repeat left top;
+}
+#best #btn a{
+    display: inline-block;
+    padding: 12px 22px;
+    background: #e05a13;
+    color: white;
+    font-weight: bold;
+    border-radius: 23.5px;
+    text-align: center;
+}
+#best #btn{
+    text-align: center;
+    margin-top: 100px;
+}
+#best #btn a:hover{
+    transition: all 0.1s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+/*new*/
+#new img{
+    width: 100%;
+}
+#new{
+    margin-bottom: 200px;
+}
+
+/*review*/
+#review{
+    height: 850px;
+    padding: 70px 0;
+}
+#review_inner{
+    width: 1320px;
+    margin: 0 auto;
+}
+#review1>img, #review2>img, #review3>img{
+    display: block;
+    float: left;
+}
+/* ㅡ>review1 야채제육도시락*/
+#review_inner #review1 #review_text{
+    float: right;
+    width: 451px;
+    box-sizing: border-box;
+    padding: 130px 0 0 50px;
+}
+#review_inner #review1 #review_text h1{
+    line-height: 54px;
+    font-size: 45px;
+    padding: 15px 0;
+    color: #485233;
+    font-family: 'ghanachoco';
+}
+#review_inner #review1 #review_text img{
+    border-top: 3px solid #000;
+    padding: 15px 0 25px 0;
+}
+#review_inner #review1 #review_text h3{
+    background: url(images/review_icon.png) no-repeat 33% bottom;
+    padding-top: 50px;
+    font-size: 23px;
+}
+/* ㅡ>review2 삼겹구이도시락*/
+#review_inner #review2 #review_text{
+    float: right;
+    width: 451px;
+    box-sizing: border-box;
+    padding: 130px 0 0 50px;
+}
+#review_inner #review2 #review_text h1{
+    line-height: 54px;
+    font-size: 45px;
+    padding: 15px 0;
+    color: #945d46;
+    font-family: 'ghanachoco';
+}
+#review_inner #review2 #review_text img{
+    border-top: 3px solid #000;
+    padding: 15px 0 25px 0;
+}
+#review_inner #review2 #review_text h3{
+    background: url(images/review_icon.png) no-repeat 33% bottom;
+    padding-top: 50px;
+    font-size: 23px;
+}
+/* ㅡ>review3 깐풍기도시락*/
+#review_inner #review3 #review_text{
+    float: right;
+    width: 451px;
+    box-sizing: border-box;
+    padding: 130px 0 0 50px;
+}
+#review_inner #review3 #review_text h1{
+    line-height: 54px;
+    font-size: 45px;
+    padding: 15px 0;
+    color: #9e4c6d;
+    font-family: 'ghanachoco';
+}
+#review_inner #review3 #review_text img{
+    border-top: 3px solid #000;
+    padding: 15px 0 25px 0;
+}
+#review_inner #review3 #review_text h3{
+    background: url(images/review_icon.png) no-repeat 33% bottom;
+    padding-top: 50px;
+    font-size: 23px;
+}
+.swiper-slide{
+    background: #fff;
+}
+
+/*notice 해뭄알리미*/
+#notice{
+    height: 650px;
+}
+#notice_inner{
+    width: 1320px;
+    margin: 0 auto;
+}
+#notice_inner h2{
+    text-align: center;
+    padding-bottom: 80px;
+}
+#event{
+    float: left;
+    background: url(images/event.jpg) no-repeat center center;
+    width: 608px;
+    height: 412px;
+    position: relative;
+}
+#news{
+    float: right;
+    background: url(images/news.jpg) no-repeat center center;
+    width: 608px;
+    height: 412px;
+    position: relative;
+}
+#notice_inner #click1, #click2{
+    background: #d4552f;
+    width: 608px;
+    height: 80px;
+    text-align: right;
+}
+#notice_inner #event #click1 a{
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    padding: 28.5px 20px 28.5px 440.8px;
+}
+#notice_inner #news #click2 a{
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+   padding: 28.5px 20px 28.5px 418.47px;
+}
+#notice_inner #event #click1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#notice_inner #news #click2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*foonter*/
+#footer{
+    height: 250px;
+    background: #585858;
+    width: 100%;
+}
+#footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 14px;
+}
+#footer_inner>img{
+    float: left;
+}
+#footer_inner #company{
+    float: left;
+    text-align: center;
+    padding-left: 206px;
+    color: white;
+}
+#footer_inner #company ul li{
+    float: left;
+    padding:0 5px;
+}
+#footer_inner #company ul li a:hover{
+    border-bottom: 1px solid white;
+}
+#footer_inner #company ol li{
+    float: left;
+    padding:0 5px;
+}
+#footer_inner #company p{
+    clear: both;
+    padding: 10px 0 30px 0;
+}
+#footer_inner #company ul li a{
+    color: white;
+}
+#footer_inner #company ul, #footer_inner #company ol{
+    display: inline-block;
+}
+#footer_inner #company ol li img{
+    opacity: 0.5;
+}
+#footer_inner #company ol li img:hover{
+    opacity: 1;
+}
+.fix{
+    position: fixed;
+    z-index: 10;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    background: #fba653;
+}
+.fix a{
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px 18px;
+    text-align: center;
+}
